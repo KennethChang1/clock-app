@@ -1,24 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="scss/style.css">
+  <script src="script.js" defer></script>
+
   <title>Frontend Mentor | Clock App</title>
 </head>
+
 <body>
-  , it's currently
-
-  in
-
-  More
-  Less
-
-  Current timezone
-  Day of the year
-  Day of the week
-  Week number
+  <main>
+    <section class="section section--top">
+      <div class="quote-wrapper">
+        <q class="quote"></q>
+        <p class="author"></p>
+      </div>
+      <div class="card">
+        <div class="card__header">
+          <img class="header-logo" src="" alt="">
+          <p class="day">GOOD MORNING</p>
+        </div>
+        <p class="card__time"></p>
+        <p class="card__location"></p>
+        <button type="button" class="btn">
+          <div class="btn-wrapper" id="btn-less">
+            <p class="btn__text">LESS</p>
+            <img class="arrow-up" src="assets/desktop/icon-arrow-up.svg" alt="">
+          </div>
+          <div class="btn-wrapper not-active" id="btn-more">
+            <p class="btn__text">MORE</p>
+            <div class="arrow-down">
+              <img src="assets/desktop/icon-arrow-down.svg" alt="">
+            </div>
+          </div>
+        </button>
+      </div>
+    </section>
+    <section class="section section--btm">
+      <div class="wrapper">
+        <p class="wrapper-title">CURRENT TIMEZONE</p>
+        <p class="wrapper-sub" id="timezone">Europe/London</p>
+      </div>
+      <div class="wrapper">
+        <p class="wrapper-title">DAY OF THE YEAR</p>
+        <p class="wrapper-sub" id="doy">295</p>
+      </div>
+      <div class="wrapper">
+        <p class="wrapper-title">DAY OF THE WEEK</p>
+        <p class="wrapper-sub" id="dow">5</p>
+      </div>
+      <div class="wrapper">
+        <p class="wrapper-title">WEEK NUMBER</p>
+        <p class="wrapper-sub" id="week-number">42</p>
+      </div>
+    </section>
+  </main>
 </body>
+
 </html>
