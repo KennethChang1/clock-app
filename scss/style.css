@@ -8,7 +8,7 @@
 body, html {
   overflow: hidden;
   position: relative;
-  height: 120%;
+  height: 100%;
 }
 
 .section {
@@ -58,7 +58,7 @@ body, html {
 
 .card {
   position: absolute;
-  bottom: 40px;
+  bottom: 150px;
 }
 
 .card__header {
