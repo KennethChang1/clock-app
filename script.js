@@ -82,7 +82,7 @@ function displayQuote(data) {
 }
 
 setInterval(function () {
-    fetch("http://worldtimeapi.org/api/ip")
+    fetch("https://worldtimeapi.org/api/ip")
         .then((res) => res.json())
         .then((data) => {
             updateTime(data);
