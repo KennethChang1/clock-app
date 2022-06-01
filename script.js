@@ -24,7 +24,7 @@ fetch("https://worldtimeapi.org/api/ip")
 
 
 function getLocation(loc){
-    fetch(`http://ip-api.com/json/${loc.client_ip}`)
+    fetch(`https://ip-api.com/json/${loc.client_ip}`)
     .then((res) => res.json())
     .then((data) => {
         updateLocation(data);
