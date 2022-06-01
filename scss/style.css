@@ -58,7 +58,7 @@ body, html {
 
 .card {
   position: absolute;
-  bottom: 150px;
+  bottom: 48px;
 }
 
 .card__header {
