@@ -17,22 +17,23 @@ btn.addEventListener('click', () => {
 fetch("https://worldtimeapi.org/api/ip")
     .then((res) => res.json())
     .then((data) => {
-        console.log(data);
+        getLocation(data);
         updateTime(data);
         updateStat(data);
     })
 
 
-fetch("https://api.ipbase.com/json?apikey=qvqWWFJgXKM86SxXZY9RolVVDbNTaZvMTFeW4baC")
+function getLocation(loc){
+    fetch(`http://ip-api.com/json/${loc.client_ip}`)
     .then((res) => res.json())
     .then((data) => {
         updateLocation(data);
     })
+}
 
 fetch("https://api.quotable.io/random")
     .then((res) => res.json())
     .then((data) => {
-        console.log(data)
         displayQuote(data);
     })
 
@@ -60,7 +61,7 @@ function updateTime(data) {
 function updateLocation(data) {
     const location = document.querySelector('.card__location');
 
-    location.textContent = `IN ${data.city}, ${data.country_name}`;
+    location.textContent = `IN ${data.city}, ${data.country}`;
 }
 
 function updateStat(data) {
