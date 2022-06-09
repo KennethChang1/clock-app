@@ -23,6 +23,7 @@ body, html {
   height: 65vh;
   color: white;
   background-size: cover;
+  background-image: url("../assets/mobile/bg-image-nighttime.jpg");
 }
 
 .section--btm {

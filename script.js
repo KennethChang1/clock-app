@@ -50,11 +50,11 @@ function updateTime(data) {
     if (time[0] > 12 && time[0] < 24) {
         day.textContent = "GOOD EVENING";
         headerLogo.setAttribute('src', 'assets/desktop/icon-moon.svg');
-        section.style.cssText = 'background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("assets/mobile/bg-image-nighttime.jpg");'
+        section.style.cssText = 'background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("assets/desktop/bg-image-nighttime.jpg");'
     } else {
         day.textContent = "GOOD MORNING";
         headerLogo.setAttribute('src', 'assets/desktop/icon-sun.svg');
-        section.style.cssText = 'background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("assets/mobile/bg-image-daytime.jpg");'
+        section.style.cssText = 'background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("assets/desktop/bg-image-daytime.jpg");'
     }
 }
 
